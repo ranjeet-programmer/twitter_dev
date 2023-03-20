@@ -18,15 +18,7 @@ app.listen(PORT, async () => {
 
   const tweetRepo = new TweetRepository();
 
-  const tweet = await tweetRepo.getWithComment("64141c54b7a9cd80f17ff69d");
-
-  // const comment = await Comment.create({
-  //   content: "new comment",
-  // });
-
-  // tweet.comments.push(comment);
-
-  // await tweet.save();
+  const tweet = await tweetRepo.create({ content: "New with hooks" });
 
   console.log(tweet);
 });
