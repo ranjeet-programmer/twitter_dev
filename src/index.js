@@ -14,7 +14,7 @@ app.listen(PORT, async () => {
 
   let ser = new services();
 
-  // await ser.create({ content: "type module added #veryinterested" });
+  await ser.create({ content: "capital #IF " });
 
   console.log("mongodb connected");
 });
